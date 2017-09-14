@@ -10,12 +10,13 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <title>npm</title>
 </head>
+
 <body>
   <!-- Navigation -->
   <nav>
     <div class="top-left">
-      <a class = "heart" href="#">♥︎</a>
-      <span class="acronym">No Princess, Mario</span>
+      <a class = "heart" href="#">❤</a>
+      <span class="acronym">No Princess Mario</span>
     </div>
 
     <ul class="top-links">
@@ -29,12 +30,26 @@
 
   <!-- Build amazing things -->
   <section id="build">
-    <div id="header">
-      <img src="images/npm-logo.png" alt="npm" id="npm-logo"/>
-      <input class="search" type="text" placeholder="find packages">
-      <button></button><!-- insert magnifying glass here-->
-      <span>sign up or log in</span><img id="bear" src="images/bear-logo.png" alt="bear"/>
-    </div>
+      <div id="header" class="container">
+          <img src="images/npm-logo.png" alt="npm" id="npm-logo"/>
+            <form>
+              <input class="search" type="text" placeholder="find packages" />
+              <button class="lupa">
+                <svg viewBox="0 0 34 34" fill="none" stroke="currentColor">
+                    <ellipse stroke-width="3" cx="16" cy="15" rx="12" ry="12"></ellipse>
+                    <path d="M26 26 l 8 8" stroke-width="3" stroke-linecap="square"></path>
+                </svg>
+              </button>
+            </form>
+            <span>sign up or log in</span>
+          <img id="bear" src="images/bear-logo.png" alt="bear"/>
+          <div class="clearfix"></div>
+      </div>
+      <div id="">
+          <h1></h1>
+          <p></p>
+          <button id="signup">Sign up for npm</button>
+      </div>
   </section>
 
   <!-- npmOrgs -->

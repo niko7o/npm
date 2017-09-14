@@ -23,8 +23,8 @@ nav {
   display: block;
   background-color: #C12127;
   color: rgba(255,255,255,0.8);
-  padding: 25px;
   box-sizing: border-box;
+  height:43px;
 }
 
 nav a {
@@ -35,7 +35,7 @@ nav a {
 nav ul li {
   display:inline-block;
   margin-right:1em;
-  padding: 15px;
+  padding: 12px;
 }
 
 nav ul li a, nav span {
@@ -48,15 +48,15 @@ nav ul li a:hover, nav span:hover {
 }
 
 .acronym {
-  margin-left: 1em;
+  margin-left: 17px;
 }
 
 .top-left {
   display: block;
   position: absolute;
-  left: 0;
-  padding: 15px;
   top: 0;
+  left: 7px;
+  padding: 12px;
 }
 
 .top-links {
@@ -64,6 +64,17 @@ nav ul li a:hover, nav span:hover {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.clearfix {
+  clear:both;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  padding: 1.25em;
+  width: 80%;
 }
 
 section {
@@ -74,21 +85,39 @@ section {
 /* Build */
 
 #npm-logo {
-  width:124px;
-  float:left;
-  margin:20px;
+  float: left;
+  width: 124px;
+  margin: 20px;
 }
 
 #header .search {
+  float: left;
   background-color: rgba(0,0,0,0.1);
-  border:1px solid gray;
-  padding-left:1em;
-  font-size:16px;
-  color:white;
-  width:80%;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding-left: 1em;
+  font-size: 16px;
+  color: white;
+  width: 80%;
   height: 3.125em;
-  margin:20px;
-  /* bwa0hamxnz - cat stepped on keyboard. keeping this as reminder */
+  margin: 20px 0px;
+  /* bwa1hamxnz - cat stepped on keyboard. keeping this as reminder */
+}
+
+#header .lupa {
+  float: left;
+  width: 50px;
+  padding: 15px;
+  color: white;
+  background-color: rgba(0,0,0,0.1);
+  margin-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-left: none;
+}
+
+#header .lupa:hover {
+  cursor: pointer;
 }
 
 #build {
