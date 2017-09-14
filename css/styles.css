@@ -1,0 +1,107 @@
+/* General styles + browser resets */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+  font-size:14px;
+}
+
+ul, menu, dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+
+nav {
+  width: 100%;
+  display: block;
+  background-color: #C12127;
+  color: rgba(255,255,255,0.8);
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+nav a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+nav ul li {
+  display:inline-block;
+  margin-right:1em;
+  padding: 15px;
+}
+
+nav ul li a, nav span {
+  transition: 0.15s color ease-in-out;
+}
+
+nav ul li a:hover, nav span:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.acronym {
+  margin-left: 1em;
+}
+
+.top-left {
+  display: block;
+  position: absolute;
+  left: 0;
+  padding: 15px;
+  top: 0;
+}
+
+.top-links {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+section {
+  width: 100%;
+  position: relative;
+}
+
+/* Build */
+
+#npm-logo {
+  width:124px;
+  float:left;
+  margin:20px;
+}
+
+#header .search {
+  background-color: rgba(0,0,0,0.1);
+  border:1px solid gray;
+  padding-left:1em;
+  font-size:16px;
+  color:white;
+  width:80%;
+  height: 3.125em;
+  margin:20px;
+  /* bwa0hamxnz - cat stepped on keyboard. keeping this as reminder */
+}
+
+#build {
+  background-color: #1D4E69;
+  background-image: url('../images/city-scape.svg');
+  height: 444px;
+}
+
+#bear {
+  width:32px;
+}
+
+#npmorg {
+  background-color: #273547;
+  height:444px;
+}
