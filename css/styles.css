@@ -1,4 +1,4 @@
-/* General styles + browser resets */
+/* Browser resets + generics */
 
 body {
   margin: 0;
@@ -19,6 +19,47 @@ ul, menu, dir {
   -webkit-padding-start: 0px;
 }
 
+.clearfix {
+  clear:both;
+}
+
+.container {
+  display: block;
+  position: relative;
+  margin: 9px auto;
+  padding: 1.25em;
+  width: 80%;
+}
+
+.centered {
+  box-sizing: border-box;
+  width:50%;
+  display:block;
+  margin:0 auto;
+}
+
+section {
+  width: 100%;
+  position: relative;
+}
+
+.btn-round {
+  font-weight: 400;
+  border-radius: 20px;
+  padding: 7px 26px 8px 26px;
+  font-size: 18px;
+  height: 41px;
+  color: #fff;
+  outline: none;
+  border: none;
+  transition:0.15s background-color linear;
+}
+
+.btn-round:hover {
+  cursor:pointer;
+}
+
+/* Nav */
 nav {
   width: 100%;
   display: block;
@@ -49,6 +90,7 @@ nav ul li a:hover, nav span:hover {
 }
 
 .acronym {
+  color: rgba(255,255,255,0.8);
   margin-left: 17px;
 }
 
@@ -67,24 +109,7 @@ nav ul li a:hover, nav span:hover {
   top: 0;
 }
 
-.clearfix {
-  clear:both;
-}
-
-.container {
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  padding: 1.25em;
-  width: 80%;
-}
-
-section {
-  width: 100%;
-  position: relative;
-}
-
-/* Navbar and header */
+/* Header */
 
 #header {
   width: 100%;
@@ -149,6 +174,7 @@ section {
   font-size: 16px;
   position: absolute;
   top: 32px;
+  left: 5px;
 }
 
 #header .right #bear {
@@ -168,7 +194,7 @@ section {
   color: white;
 }
 
-/* Start of Build amazing things */
+/* Build amazing things */
 
 #build {
   background-color: #1D4E69;
@@ -176,23 +202,91 @@ section {
   height: 444px;
 }
 
+#build #texts {
+  width:55%;
+}
+
 #build #texts h1 {
-  font-size:48px;
-  font-weight:lighter;
+  font-size: 48px;
+  font-weight: lighter;
   display: block;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 
 #build #texts p {
   font-size: 18px;
+  line-height: 1.3;
   max-width: 560px;
   display: block;
   width: 100%;
 }
 
+#btn-signup { background-color: #f09233; }
+#btn-signup:hover { background-color: #d87d20; } /* naranja más oscuro ya que no se notaba la diferencia*/
+
+/* Npm org */
+
 #npmorg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   background-color: #273547;
-  height:444px;
+  height: 582px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.unitedteam {
+  width: 560px;
+  height: 334px;
+  background-image: url('../images/collaboration.svg');
+}
+
+.explainer {
+  height: 334px;
+  padding-left: 4em;
+}
+
+.explainer ul li {
+  line-height: 2.5;
+}
+
+.explainer ul li:last-child {
+  margin-bottom: 1em;
+}
+
+.explainer h1 {
+  max-width: 420px;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: lighter;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.explainer li {
+  margin-left: 2em;
+  font-size: 16px;
+}
+
+#btn-orgs {
+  background-color: #cb3837;
+  margin-top: 1em;
+}
+
+#btn-orgs:hover {
+  background-color: #ac2e2d;
+}
+
+/* What is NPM */
+
+#whatisnpm {
+  height: 500px;
+  background-color: #206F9C;
 }
