@@ -383,3 +383,26 @@ nav ul li a:hover, nav span:hover {
   width: 33.33%;
   height: 170px;
 }
+
+.column .title {
+  display:block;
+  margin-top:5px;
+  font-weight: bold;
+  color: #373d48;
+  font-size: 20px;
+}
+
+.column .description {
+  display: block;
+  padding:10px 20px;
+  font-size: 16px;
+  line-height: 1.35;
+  color: #6d7986;
+}
+
+/* Join */
+
+#join {
+  background-color: #34495e;
+  height: 520px;
+}
