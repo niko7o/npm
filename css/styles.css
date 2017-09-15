@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
   font-size:14px;
+  color:white;
 }
 
 ul, menu, dir {
@@ -33,8 +34,8 @@ nav a {
 }
 
 nav ul li {
-  display:inline-block;
-  margin-right:1em;
+  display: inline-block;
+  margin-right: 1em;
   padding: 12px;
 }
 
@@ -72,6 +73,7 @@ nav ul li a:hover, nav span:hover {
 
 .container {
   display: block;
+  position: relative;
   margin: 0 auto;
   padding: 1.25em;
   width: 80%;
@@ -82,31 +84,50 @@ section {
   position: relative;
 }
 
-/* Build */
+/* Navbar and header */
 
-#npm-logo {
+#header {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.left, .right {
+  display: block;
+  width: 10%;
+  height: 90px;
+  float: left;
+}
+
+.middle {
+  display: block;
+  width: 80%;
+  height: 90px;
+  float: left;
+}
+
+#header .left #npm-logo {
   float: left;
   width: 124px;
   margin: 20px;
 }
 
-#header .search {
+#header .middle #search input{
+  width: calc(100% - 75px);
+  color: white;
   float: left;
   background-color: rgba(0,0,0,0.1);
   border: 1px solid rgba(255,255,255,0.2);
   padding-left: 1em;
   font-size: 16px;
-  color: white;
-  width: 80%;
-  height: 3.125em;
-  margin: 20px 0px;
+  height: 46px;
+  margin: 20px auto;
   /* bwa1hamxnz - cat stepped on keyboard. keeping this as reminder */
 }
 
 #header .lupa {
   float: left;
-  width: 50px;
-  padding: 15px;
+  width: 46px;
+  padding: 13px;
   color: white;
   background-color: rgba(0,0,0,0.1);
   margin-top: 20px;
@@ -120,14 +141,55 @@ section {
   cursor: pointer;
 }
 
+#header .right {
+  position: relative;
+}
+
+#header .right span {
+  font-size: 16px;
+  position: absolute;
+  top: 32px;
+}
+
+#header .right #bear {
+  position: absolute;
+  width: 42px;
+  top: 23px;
+  right: 20px;
+}
+
+#header .right a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  transition: 0.15s linear color;
+}
+
+#header .right a:hover {
+  color: white;
+}
+
+/* Start of Build amazing things */
+
 #build {
   background-color: #1D4E69;
   background-image: url('../images/city-scape.svg');
   height: 444px;
 }
 
-#bear {
-  width:32px;
+#build #texts h1 {
+  font-size:48px;
+  font-weight:lighter;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#build #texts p {
+  font-size: 18px;
+  max-width: 560px;
+  display: block;
+  width: 100%;
 }
 
 #npmorg {
