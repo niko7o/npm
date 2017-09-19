@@ -286,6 +286,7 @@ nav ul li a:hover, nav span:hover {
   width: 560px;
   height: 334px;
   background-image: url('../images/collaboration.svg');
+  background-repeat: no-repeat;
 }
 
 /* there is a better way for responsive to do this part with absolute positions */
@@ -422,10 +423,10 @@ nav ul li a:hover, nav span:hover {
 
 #join .billboard {
   width: 488px;
-  z-index: 1;
   float: left;
   position: absolute;
   bottom: calc(98px);
+  z-index: 3;
 }
 
 #join .car {
@@ -433,7 +434,7 @@ nav ul li a:hover, nav span:hover {
   right: 970px;
   bottom: calc(75px);
   position: absolute;
-  z-index: 1;
+  z-index: 3;
 }
 
 .blue {
@@ -442,6 +443,7 @@ nav ul li a:hover, nav span:hover {
   background-color: #098acd;
   position: absolute;
   bottom: 0;
+  z-index: 2;
 }
 
 /* Trial */
@@ -472,4 +474,68 @@ nav ul li a:hover, nav span:hover {
   width: 47%;
   margin-left: 12.5%;
   height: 370px;
+}
+
+/* Get started */
+
+#getstarted {
+  height: 870px;
+  background-color: #f0f0f0;
+}
+
+#getstarted .navy {
+  padding-top: 2em;
+}
+
+.row {
+  width: 1128px;
+  margin: 5em auto;
+  display: flex;
+  height: 475px;
+  justify-content: center;
+}
+
+.pricing {
+  width: 25%;
+  text-align: left;
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 475px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  border-top-width: 10px;
+  position: relative;
+}
+
+.free { border-top-color: #cb3837; }
+.sevendollars { border-top-color: #2a79a7; }
+.sixteen {  border-top-color: #f09233;}
+
+.price-plan {
+  font-size: 48px;
+  font-weight: lighter;
+  position: absolute;
+  text-align: right;
+  right: 50px;
+  top: 30px;
+  color: black;
+}
+
+.price-description {
+  font-size: 13px;
+  font-weight: bold;
+  color: gray;
+  position: absolute;
+  top: 95px;
+  right: 55px;
+}
+
+.dollar {
+  color: gray;
+  font-size: 24px;
+  font-weight: lighter;
+  position: absolute;
+  left: -16px;
+  top: 17px;
 }
