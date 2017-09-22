@@ -133,9 +133,13 @@ nav ul li a:hover, nav span:hover {
   color: white;
 }
 
-.acronym {
+#acronym {
   color: rgba(255,255,255,0.8);
   margin-left: 17px;
+}
+
+.top-left .heart::selection, .top-left #acronym::selection{
+  background-color: rgba(255,255,255,0);
 }
 
 .top-left {
@@ -452,9 +456,9 @@ header .right a:hover {
 }
 
 #join .car {
-  width: 191px;
-  right: 690px;
-  bottom: calc(75px);
+  width: 180px;
+  right: 630px;
+  bottom: calc(78px);
   position: absolute;
   z-index: 3;
 }
