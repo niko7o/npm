@@ -22,6 +22,7 @@ h1 {
 
 p {
   font-size: 16px;
+  line-height: 1.75;
 }
 
 a {
@@ -29,7 +30,7 @@ a {
   color: white;
 }
 
-ul, menu, dir {
+ul, menu, dir, h5 {
   display: block;
   list-style-type: disc;
   -webkit-margin-before: 0em;
@@ -44,21 +45,11 @@ section {
   position: relative;
 }
 
-.clearfix {
-  clear: both;
-}
-
-.float {
-  float: left;
-}
-
-.half {
-  width: 50%;
-}
-
-.centeredtext {
-  text-align: center;
-}
+.clearfix { clear: both; }
+.float { float: left; }
+.half { width: 50%; }
+.centeredtext { text-align: center; }
+.eighteen { font-size: 18px }
 
 .container {
   display: block;
@@ -425,7 +416,7 @@ header .right a:hover {
 
 .column .description {
   display: block;
-  padding:10px 70px;
+  padding:10px 60px;
   font-size: 16px;
   line-height: 1.35;
   color: #6d7986;
@@ -511,20 +502,24 @@ header .right a:hover {
   background-color: #f0f0f0;
 }
 
-#getstarted .navy {
-  padding-top: 2em;
+#getstarted p {
+  font-size: 18px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
 }
+
+#getstarted .navy { padding-top: 2em; }
 
 .row {
   width: 1128px;
-  margin: 5em auto;
+  margin: 4em auto;
   display: flex;
   height: 475px;
   justify-content: center;
 }
 
 .pricing {
-  width: 25%;
+  width: 270px;
   text-align: left;
   background-color: white;
   margin-left: 10px;
@@ -534,19 +529,6 @@ header .right a:hover {
   border: 1px solid #ccc;
   border-top-width: 10px;
   position: relative;
-}
-
-.free { border-top-color: #cb3837; }
-.sevendollars { border-top-color: #2a79a7; }
-.sixteen {  border-top-color: #f09233;}
-
-.price-plan {
-  font-size: 48px;
-  font-weight: lighter;
-  position: absolute;
-  text-align: right;
-  right: 50px;
-  top: 30px;
   color: black;
 }
 
@@ -566,4 +548,160 @@ header .right a:hover {
   position: absolute;
   left: -16px;
   top: 17px;
+}
+
+.price-package {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+/* Pricing labels + text + button background color classes */
+.free { border-top-color: #cb3837; }
+.sevendollars { border-top-color: #2a79a7; }
+.sixteen {  border-top-color: #f09233;}
+
+.tomato { color: #cb3837 }
+.navyblue {color: #2a79a7 }
+.yellow { color: #f09233 }
+
+.create-account { background-color: #cb3837; }
+.sign-up { background-color: #2a79a7; }
+.learn-more { background-color: #f09233; }
+
+/* end of color generics */
+
+.price-specs ul li {
+  color: gray;
+  font-weight: bold;
+  margin-top: 8px;
+  list-style: none;
+}
+
+.fullwidth {
+  width: 85%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 7px;
+  position: absolute;
+  bottom: 40px;
+}
+
+.create-account:hover { background-color: #ac2e2d; }
+.sign-up:hover { background-color: #226186; }
+.learn-more:hover { background-color: #e97e11; }
+
+.pricing-header {
+  height: 125px;
+  position: relative;
+}
+
+.price-plan {
+  font-size: 48px;
+  font-weight: lighter;
+  position: absolute;
+  text-align: right;
+  right: 50px;
+  top: 30px;
+  color: black;
+}
+
+.pricing-body {
+  padding: 20px;
+  bottom: 0;
+  position: absolute;
+  height: 310px;
+}
+
+.npm-love {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+}
+
+.npm-love h1 { font-size: 26px }
+
+/* Packages frequently installed */
+
+#pfi {
+  height: 490px;
+  background-color: white;
+}
+
+#pfi .navy { padding-top: 2em; }
+
+.packages {
+  width: 1160px;
+  margin: 3em auto 0;
+  display: flex;
+}
+
+.popular {
+  width: 33.333%;
+}
+
+.popular:nth-child(2) {
+  border-left: 2px solid #e6e6e6;
+  border-right: 2px solid #e6e6e6;
+}
+
+.popular .item {
+  height: 87px;
+}
+
+.item .logo {
+  width: 115px;
+  height: 87px;
+  position: relative;
+  float: left;
+}
+
+.item .logo img {
+  display: block;
+  max-height: 67px;
+  max-width: 67px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+}
+
+.item .info {
+  width: 241px;
+  float: left;
+  height: 87px;
+  position: relative;
+}
+
+.item .info .title {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #1a1a1a;
+  margin-top: 1em;
+  width: 241px;
+}
+
+.item .info .title:hover { text-decoration: underline; }
+
+.item .info .sub {
+  display: block;
+  font-size: 16px;
+  line-height: 1.35;
+  color: #6d7986;
+}
+
+.item .info .author {
+  font-size: 13px;
+  color: gray;
+}
+
+.item .info .author a { color: black }
+.item .info .author a:hover {
+  text-decoration: underline;
+  cursor: pointer
 }
