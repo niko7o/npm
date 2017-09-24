@@ -810,6 +810,10 @@ header .right a:hover {
   color: #cb3837;
 }
 
+#mostdepended .item .info .author a:first-child {
+  color: black;
+}
+
 /* Footer */
 
 footer {
